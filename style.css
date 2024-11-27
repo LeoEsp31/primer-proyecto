@@ -1,89 +1,136 @@
 /* style.css */
 
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilo base */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     color: #333;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
 }
 
 header {
     background-color: #007bff;
     color: white;
     padding: 40px 20px;
+    text-align: center;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
 p {
     font-size: 1.2rem;
-}
-
-section {
-    padding: 40px 20px;
-}
-
-/* Habilidades */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-/* Tarjetas de proyecto */
-.card {
     margin-bottom: 20px;
 }
 
+/* Secciones */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+p, ul {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Estilo de la lista de habilidades */
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+/* Tarjetas de Proyecto */
+.card {
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 .card-img-top {
-    max-height: 200px;
+    max-height: 250px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card-body {
     text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .card-title {
     font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .card-text {
     font-size: 1.1rem;
-    color: #666;
+    color: #777;
 }
 
 /* Estilo del footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
-/* Diseño responsivo para móviles */
+/* Estilo responsivo para móviles */
 @media (max-width: 767px) {
+    header {
+        padding: 30px 20px;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
 
     .card {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .card-img-top {
-        height: 150px;
+        height: 200px;
     }
 
     .container {
@@ -92,9 +139,14 @@ footer {
     }
 }
 
-/* Diseño para pantallas más grandes */
 @media (min-width: 768px) {
     .card-body {
         text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 80%;
     }
 }
