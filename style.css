@@ -1,45 +1,70 @@
+/* Establecer una fuente más atractiva */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
 }
 
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 0;
-}
-
+/* Título principal */
 h1 {
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 20px;
 }
 
+/* Estilos para los encabezados de las secciones */
+h2 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para los contenedores de las secciones */
 section {
-    margin-top: 30px;
+    padding: 40px 0;
 }
 
-ul {
-    list-style-type: none;
+/* Espaciado y estilo para los párrafos */
+p {
+    line-height: 1.6;
+    color: #555;
 }
 
-ul li {
-    background-color: #fff;
-    padding: 10px;
-    margin: 5px 0;
+/* Estilo para los enlaces */
+a {
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+/* Cambiar el color del enlace al pasar el ratón */
+a:hover {
+    background-color: #45a049;
 }
 
+/* Estilo para las tarjetas de proyectos */
 .card {
     margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card-body {
-    background-color: #f9f9f9;
+/* Título de la tarjeta */
+.card-title {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Ajustar el diseño del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
