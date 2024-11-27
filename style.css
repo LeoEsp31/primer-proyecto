@@ -1,131 +1,100 @@
-/* Establecer una fuente moderna y agradable */
+/* style.css */
+
+/* Estilo base */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9; /* Fondo suave */
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Encabezado de la página */
 header {
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
-    padding: 40px 0;
-    text-align: center;
-    border-bottom: 5px solid #333;
+    padding: 40px 20px;
+    border-radius: 10px;
 }
 
-/* Título principal */
 h1 {
-    font-size: 2.8em;
-    margin: 0;
-    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-h2 {
-    color: #4CAF50;
-    font-size: 2em;
+p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+/* Habilidades */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Tarjetas de proyecto */
+.card {
     margin-bottom: 20px;
 }
 
-/* Contenedor de las secciones */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* Párrafos y texto en general */
-p {
-    line-height: 1.8;
-    font-size: 1.2em;
-    color: #555;
-}
-
-/* Estilo para los enlaces */
-a {
-    color: white;
-    background-color: #4CAF50;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover sobre los enlaces */
-a:hover {
-    background-color: #45a049;
-}
-
-/* Estilos para las tarjetas de proyectos */
-.card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px); /* Efecto de levantar la tarjeta al pasar el ratón */
-}
-
-.card-title {
-    font-size: 1.5em;
-    color: #333;
-}
-
-.card-body {
-    padding: 20px;
-}
-
-/* Estilo para las imágenes de las tarjetas */
 .card-img-top {
-    border-radius: 10px 10px 0 0;
     max-height: 200px;
     object-fit: cover;
 }
 
-/* Sección de pie de página */
-footer {
-    background-color: #333;
-    color: white;
+.card-body {
     text-align: center;
-    padding: 20px 0;
-    font-size: 1.1em;
-    margin-top: 40px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Estilo para listas (habilidades) */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    font-size: 1.2em;
-    color: #333;
+.card-title {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Diseño responsivo para pantallas pequeñas */
-@media (max-width: 768px) {
-    header {
-        padding: 20px 0;
-    }
+.card-text {
+    font-size: 1.1rem;
+    color: #666;
+}
 
+/* Estilo del footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Diseño responsivo para móviles */
+@media (max-width: 767px) {
     h1 {
-        font-size: 2em;
-    }
-
-    section {
-        padding: 40px 20px;
+        font-size: 2.5rem;
     }
 
     .card {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Diseño para pantallas más grandes */
+@media (min-width: 768px) {
+    .card-body {
+        text-align: left;
     }
 }
