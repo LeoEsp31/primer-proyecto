@@ -1,70 +1,131 @@
-/* Establecer una fuente más atractiva */
+/* Establecer una fuente moderna y agradable */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9; /* Fondo suave */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+}
+
+/* Encabezado de la página */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #333;
 }
 
 /* Título principal */
 h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-top: 20px;
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: 700;
 }
 
-/* Estilos para los encabezados de las secciones */
 h2 {
     color: #4CAF50;
     font-size: 2em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* Estilo para los contenedores de las secciones */
+/* Contenedor de las secciones */
 section {
-    padding: 40px 0;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* Espaciado y estilo para los párrafos */
+/* Párrafos y texto en general */
 p {
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.2em;
     color: #555;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #ffffff;
+    color: white;
     background-color: #4CAF50;
-    padding: 10px 20px;
-    text-decoration: none;
+    padding: 12px 20px;
     border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-/* Cambiar el color del enlace al pasar el ratón */
+/* Hover sobre los enlaces */
 a:hover {
     background-color: #45a049;
 }
 
-/* Estilo para las tarjetas de proyectos */
+/* Estilos para las tarjetas de proyectos */
 .card {
-    margin-bottom: 20px;
-    border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
 }
 
-/* Título de la tarjeta */
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantar la tarjeta al pasar el ratón */
+}
+
 .card-title {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #333;
 }
 
-/* Ajustar el diseño del pie de página */
+.card-body {
+    padding: 20px;
+}
+
+/* Estilo para las imágenes de las tarjetas */
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Sección de pie de página */
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
+    text-align: center;
     padding: 20px 0;
-    position: fixed;
+    font-size: 1.1em;
+    margin-top: 40px;
+    position: relative;
     bottom: 0;
     width: 100%;
-    text-align: center;
+}
+
+/* Estilo para listas (habilidades) */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
